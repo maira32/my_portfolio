@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function About() {
   return (
     <div className="container" style={{ padding: '6rem 20px', maxWidth: '900px' }}>
