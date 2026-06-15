@@ -1,0 +1,1 @@
+export default function Featured() { return <div className="container" style={{padding: "4rem 20px"}}><h2>Featured Work</h2></div>; }
