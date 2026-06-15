@@ -17,7 +17,6 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            {/* Blog and Featured routes have been completely removed */}
           </Routes>
         </main>
         
