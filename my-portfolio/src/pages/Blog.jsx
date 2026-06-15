@@ -1,1 +1,0 @@
-export default function Blog() { return <div className="container" style={{padding: "4rem 20px"}}><h2>Blog</h2></div>; }

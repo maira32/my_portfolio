@@ -118,21 +118,20 @@ a {
 
 .designer-column h3,
 .coder-column h3 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  font-weight: 200;
+  font-size: 4.5rem; /* Significantly larger */
+  margin-bottom: 1rem;
+  color: #111; /* Deeper black */
 }
 
-.designer-column p,
-.coder-column p {
-  font-size: 1.1rem;
-  opacity: 0.8;
-}
-
-/* Coder Side specific formatting based on <coder> and image_0.png */
-.coder-column h3 {
-  font-family: var(--monospace-font); /* <coder> should be monospace */
+.designer-column h3 {
+  font-weight: 700; /* Bold and modern */
   letter-spacing: -2px;
+}
+
+.coder-column h3 {
+  font-family: 'Fira Code', 'Courier New', monospace; 
+  font-weight: 400; /* Lighter weight for the code aesthetic */
+  letter-spacing: -3px;
 }
 
 /* Add subtle background code snippet overlay (to emulate image_0.png) */
@@ -163,5 +162,66 @@ a {
   }
   .split-identity-hero::after {
     display: none;
+  }
+}
+
+/* --- MOBILE RESPONSIVENESS (PHONES) --- */
+@media (max-width: 768px) {
+  /* 1. Stack the Navigation Bar */
+  .nav-wrapper {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .nav-links, .nav-socials {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* 2. Fix the Hero Layout */
+  .split-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  /* Bring the image to the top on mobile */
+  .central-image-container {
+    order: -1; 
+    width: 200px; 
+  }
+
+  /* 3. Shrink the Massive Typography */
+  .designer-column h3,
+  .coder-column h3 {
+    font-size: 2.8rem; /* Scaled down from 4.5rem */
+  }
+
+  .designer-column p,
+  .coder-column p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  /* 4. Adjust Page Padding (Portfolio & About pages) */
+  .container {
+    padding: 0 15px;
+  }
+  
+  .split-identity-hero,
+  .container[style] {
+    padding-top: 3rem !important; 
+    padding-bottom: 3rem !important;
+  }
+
+  /* Shrink page headers */
+  h2 {
+    font-size: 2rem !important;
+  }
+  
+  /* Stack the tech grid nicely */
+  .tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }

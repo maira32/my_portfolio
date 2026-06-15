@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import logoImage from '../assets/my-logo.png'; // Importing your new logo
 
@@ -11,17 +10,15 @@ const Navbar = () => {
         </Link>
         
         <div className="nav-links">
-          <NavLink to="/about" className={({ isActive }) => isActive ? 'active-link' : ''}>about</NavLink>
-          <NavLink to="/featured" className={({ isActive }) => isActive ? 'active-link' : ''}>featured</NavLink>
-          <NavLink to="/portfolio" className={({ isActive }) => isActive ? 'active-link' : ''}>portfolio</NavLink>
-          <NavLink to="/blog" className={({ isActive }) => isActive ? 'active-link' : ''}>blog</NavLink>
+          <NavLink to="/about" className={({ isActive }) => isActive ? 'active-link' : ''}>About</NavLink>
+          <NavLink to="/featured" className={({ isActive }) => isActive ? 'active-link' : ''}>Featured</NavLink>
+          <NavLink to="/portfolio" className={({ isActive }) => isActive ? 'active-link' : ''}>Portfolio</NavLink>
         </div>
         
         <div className="nav-socials">
-          <a href="mailto:mairatahir3@gmail.com" target="_blank" rel="noopener noreferrer">email</a>
-          <a href="https://twitter.com/mairatahir" target="_blank" rel="noopener noreferrer">twitter</a>
-          <a href="https://linkedin.com/in/mairatahir" target="_blank" rel="noopener noreferrer">linkedin</a>
-          <a href="https://github.com/maira32" target="_blank" rel="noopener noreferrer">github</a>
+          <a href="mailto:mairatahir3@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+          <a href="https://www.linkedin.com/in/maira-tahir-380a38308" target="_blank" rel="noopener noreferrer">Linkedin</a>
+          <a href="https://github.com/maira32" target="_blank" rel="noopener noreferrer">Github</a>
         </div>
       </div>
     </nav>
