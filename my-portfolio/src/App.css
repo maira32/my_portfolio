@@ -46,6 +46,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* This forces elements to drop to the next line if they run out of room */
+  gap: 20px; /* Ensures space between the menus */
 }
 
 .nav-logo {
